@@ -19,4 +19,6 @@
           args="-topic robot_description -entity navros" />
 
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
+    <node pkg="controller_manager" exec="spawner" args="diff_cont"/>
+    <node pkg="controller_manager" exec="spawner" args="joint_broad"/>
 </launch>

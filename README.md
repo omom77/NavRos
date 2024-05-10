@@ -9,3 +9,7 @@ Use the following command to control the navros gazebo simulation using keyboard
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
 ```
+To Control the Gazebo sim using navros_vel_pub node
+```
+ros2 run navros_remote navros_vel_pub
+```

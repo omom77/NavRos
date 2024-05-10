@@ -8,19 +8,19 @@ class NavrosVelPub(Node): # MODIFY NAME
     def __init__(self):
         super().__init__("navros_vel_pub") # Executable MODIFY NAME
         self.get_logger().info("Initializing Communications....")
-        self.navros_vel_pub_ = self.create_publisher(Twist, "cmd_vel_unstamped", 10)
-        self.timer_ = self.create_timer(1.0, self.publish_hw_status)
+        self.navros_vel_pub_ = self.create_publisher(Twist, "/diff_cont/cmd_vel_unstamped", 10)
+        self.timer_ = self.create_timer(1.0, self.publish_vel)
         self.get_logger().info("Publishing to hardware_status_publisher")
         self.get_logger().info("Communication Established!")
         
-    def publish_hw_status(self):
+    def publish_vel(self):
         twist_msg = Twist()
-        twist_msg.linear.x= 0.5
+        twist_msg.linear.x= 1.0
         twist_msg.linear.y= 0.0
         twist_msg.linear.z= 0.0
         twist_msg.angular.x= 0.0
         twist_msg.angular.y= 0.0
-        twist_msg.angular.z= 0.5 
+        twist_msg.angular.z= 0.0
         self.navros_vel_pub_.publish(twist_msg)
 
 def main(args=None):

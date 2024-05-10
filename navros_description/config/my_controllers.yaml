@@ -27,6 +27,8 @@ diff_cont:
     wheel_separation: 2.1
     wheel_radius: 0.35
 
+    # Specify usage of TimeStamps
+    # Timing critical applications can use timestamps
     use_stamped_vel: false
 
     # open_loop: false    

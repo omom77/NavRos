@@ -1,0 +1,4 @@
+source;share/navros_remote/local_setup.bash
+source;share/navros_remote/local_setup.dsv
+source;share/navros_remote/local_setup.sh
+source;share/navros_remote/local_setup.zsh

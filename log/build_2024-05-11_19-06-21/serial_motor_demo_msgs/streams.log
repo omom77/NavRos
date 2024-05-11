@@ -1,0 +1,282 @@
+[0.028s] Invoking command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/serial_motor_demo_msgs
+[0.116s] -- The C compiler identification is GNU 11.4.0
+[0.187s] -- The CXX compiler identification is GNU 11.4.0
+[0.196s] -- Detecting C compiler ABI info
+[0.276s] -- Detecting C compiler ABI info - done
+[0.283s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.283s] -- Detecting C compile features
+[0.283s] -- Detecting C compile features - done
+[0.286s] -- Detecting CXX compiler ABI info
+[0.376s] -- Detecting CXX compiler ABI info - done
+[0.386s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.387s] -- Detecting CXX compile features
+[0.387s] -- Detecting CXX compile features - done
+[0.395s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.813s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.968s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.110s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.123s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.142s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.229s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.493s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.715s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.986s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.015s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.024s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.057s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.057s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.057s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.058s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.083s] -- Found PythonExtra: .so  
+[2.132s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.135s] -- Added test 'lint_cmake' to check CMake code style
+[2.136s] -- Added test 'xmllint' to check XML markup files
+[2.144s] -- Configuring done
+[2.174s] -- Generating done
+[2.177s] -- Build files have been written to: /home/om/navros_ws/src/build/serial_motor_demo_msgs
+[2.184s] Invoked command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/serial_motor_demo_msgs
+[2.186s] Invoking command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/serial_motor_demo_msgs -- -j16 -l16
+[2.233s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.245s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.257s] [  4%] Built target ament_cmake_python_copy_serial_motor_demo_msgs
+[2.481s] running egg_info
+[2.482s] creating serial_motor_demo_msgs.egg-info
+[2.497s] writing serial_motor_demo_msgs.egg-info/PKG-INFO
+[2.497s] writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt
+[2.498s] writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt
+[2.498s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[2.553s] [  4%] Built target serial_motor_demo_msgs__cpp
+[2.558s] reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[2.559s] writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'
+[2.567s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.567s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.567s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.582s] [ 17%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_command__functions.c.o[0m
+[2.582s] [ 17%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c.o[0m
+[2.582s] [ 17%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_c.dir/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c.o[0m
+[2.608s] [ 17%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg
+[2.641s] [ 19%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_generator_c.so[0m
+[2.681s] [ 19%] Built target serial_motor_demo_msgs__rosidl_generator_c
+[2.694s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.694s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.694s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.855s] [ 27%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[2.855s] [ 29%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[2.859s] [ 31%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[2.866s] [ 36%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp.o[0m
+[2.867s] [ 36%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp.o[0m
+[2.867s] [ 38%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp.o[0m
+[2.909s] [ 40%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/encoder_vals__type_support.cpp.o[0m
+[2.910s] [ 44%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_vels__type_support.cpp.o[0m
+[2.910s] [ 44%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/serial_motor_demo_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o[0m
+[3.047s] [ 51%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/encoder_vals__type_support.cpp.o[0m
+[3.047s] [ 51%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_command__type_support.cpp.o[0m
+[3.047s] [ 51%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/serial_motor_demo_msgs/msg/motor_vels__type_support.cpp.o[0m
+[3.115s] [ 53%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_c.so[0m
+[3.170s] [ 59%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support_c.cpp.o[0m
+[3.170s] [ 59%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support_c.cpp.o[0m
+[3.170s] [ 59%] [32mBuilding CXX object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support_c.cpp.o[0m
+[3.207s] [ 63%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c.o[0m
+[3.207s] [ 63%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c.o[0m
+[3.214s] [ 63%] Built target serial_motor_demo_msgs__rosidl_typesupport_c
+[3.225s] [ 65%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c.o[0m
+[3.291s] [ 68%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_cpp.so[0m
+[3.309s] [ 70%] [32m[1mLinking C shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.371s] [ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c
+[3.371s] [ 70%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp
+[3.457s] [ 72%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.499s] [ 74%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.510s] [ 74%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp
+[3.585s] [ 76%] [32m[1mLinking CXX shared library libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.585s] [ 76%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp
+[3.659s] [ 76%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c
+[3.684s] [ 76%] Built target serial_motor_demo_msgs
+[3.709s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.081s] [ 78%] Built target serial_motor_demo_msgs__py
+[4.107s] [ 85%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o[0m
+[4.107s] [ 85%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_encoder_vals_s.c.o[0m
+[4.107s] [ 85%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c.o[0m
+[4.195s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/libserial_motor_demo_msgs__rosidl_generator_py.so[0m
+[4.237s] [ 87%] Built target serial_motor_demo_msgs__rosidl_generator_py
+[4.261s] [ 93%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.261s] [ 93%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.261s] [ 93%] [32mBuilding C object CMakeFiles/serial_motor_demo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.342s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.342s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.352s] [100%] [32m[1mLinking C shared library rosidl_generator_py/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.378s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_c__pyext
+[4.379s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c__pyext
+[4.391s] [100%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.405s] Invoked command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/serial_motor_demo_msgs -- -j16 -l16
+[4.531s] Invoking command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/serial_motor_demo_msgs
+[4.541s] -- Install configuration: ""
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.541s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.c
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.c
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h
+[4.542s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.c
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh
+[4.543s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv
+[4.544s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so
+[4.544s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so" to ""
+[4.544s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.544s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.544s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.544s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h
+[4.544s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h
+[4.544s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h
+[4.545s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.545s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so
+[4.545s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.545s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.545s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.545s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.545s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.545s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.c
+[4.545s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.c
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.c
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so
+[4.546s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.546s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so
+[4.547s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so" to ""
+[4.547s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.547s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.547s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp
+[4.547s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.547s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp
+[4.547s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp
+[4.547s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp
+[4.548s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp
+[4.548s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.549s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.549s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/dds_fastrtps
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp
+[4.549s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.549s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.550s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs
+[4.550s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg
+[4.550s] -- Up-to-date: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.cpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.cpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.cpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp
+[4.550s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so
+[4.551s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.551s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so
+[4.551s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so" to ""
+[4.551s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh
+[4.551s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv
+[4.551s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info
+[4.551s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command.py
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/__init__.py
+[4.552s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command_s.c
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_vels.py
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals.py
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/__init__.py
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/libserial_motor_demo_msgs__rosidl_generator_py.so
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.553s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.554s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c
+[4.554s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.554s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.590s] Listing '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs'...
+[4.590s] Compiling '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/__init__.py'...
+[4.590s] Listing '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg'...
+[4.590s] Compiling '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/__init__.py'...
+[4.590s] Compiling '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals.py'...
+[4.590s] Compiling '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command.py'...
+[4.590s] Compiling '/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_vels.py'...
+[4.594s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.594s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.595s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.595s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.595s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.595s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so
+[4.596s] -- Set runtime path of "/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so" to ""
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg
+[4.596s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg
+[4.597s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg
+[4.597s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs
+[4.597s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs
+[4.597s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh
+[4.597s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv
+[4.598s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.599s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.600s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake
+[4.601s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.602s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake
+[4.603s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake
+[4.603s] -- Installing: /home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml
+[4.605s] Invoked command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/serial_motor_demo_msgs

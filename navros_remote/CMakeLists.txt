@@ -14,10 +14,14 @@ find_package(ament_cmake_python REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(PkgConfig)
+pkg_check_modules(SERIAL libserial)
 # find_package(tf2 REQUIRED)
 
 install(PROGRAMS
   ${PROJECT_NAME}/navros_vel_pub.py
+  ${PROJECT_NAME}/navros_robot_controller_pub.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

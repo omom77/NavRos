@@ -1,5 +1,6 @@
 {
     "configuration": "cpu=atmega328",
     "board": "arduino:avr:nano",
-    "programmer": "arduino:arduinoasisp"
+    "programmer": "arduino:arduinoasisp",
+    "port": "/dev/ttyUSB0"
 }

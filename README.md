@@ -19,3 +19,7 @@ ros2 run navros_remote navros_vel_sub_client.py
 ```
 ros2 run navros_remote navros_robot_controller_server.py 
 ```
+### Subscriber to Read values from the DC Motor Encoder
+```
+ros2 run navros_remote navros_encoder_sub.py
+```

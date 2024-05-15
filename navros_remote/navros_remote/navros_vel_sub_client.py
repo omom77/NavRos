@@ -47,9 +47,9 @@ class NavrosVelSubClient(Node):
         elif(lx < 0):
             request.motor_state = "2"
         elif(az > 0):
-            request.motor_state = "1"
+            request.motor_state = "3"
         elif(az < 0):
-            request.motor_state = "2"
+            request.motor_state = "4"
 
         future = client.call_async(request)
         future.add_done_callback(partial(self.callback_client, motor_state=motor_state))

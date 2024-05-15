@@ -23,32 +23,68 @@ void updateEncoder()
 }
 
 void forward(int pwma, int pwmb){
-  digitalWrite(mA1,HIGH);
-  digitalWrite(mA2,LOW);
-  analogWrite(mAEn,pwma);
-  digitalWrite(mB1,HIGH);
-  digitalWrite(mB2,LOW);
-  analogWrite(mBEn,pwmb);
-  delay(730);
-  digitalWrite(mA1,LOW);
-  digitalWrite(mA2,LOW);
-  digitalWrite(mB1,LOW);
-  digitalWrite(mB2,LOW);
-  // delay(1000);
+  analogWrite(mAEn, pwma);
+  analogWrite(mBEn, pwmb);
+ 
+  digitalWrite(mA1, HIGH);
+  digitalWrite(mA2, LOW);
+   
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, HIGH);
+  delay(730); 
+   
+  digitalWrite(mA1, LOW);
+  digitalWrite(mA2, LOW);
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, LOW);
 }
 void reverse(int pwma, int pwmb){
-  digitalWrite(mA1,LOW);
-  digitalWrite(mA2,HIGH);
-  analogWrite(mAEn,pwma);
-  digitalWrite(mB1,LOW);
-  digitalWrite(mB2,HIGH);
-  analogWrite(mBEn,pwmb);
-  delay(1000);
+  analogWrite(mAEn, pwma);
+  analogWrite(mBEn, pwmb);
+
+  digitalWrite(mA1, LOW);
+  digitalWrite(mA2, HIGH);
+  
+  digitalWrite(mB1, HIGH);
+  digitalWrite(mB2, LOW);
+  delay(730);
+
+  digitalWrite(mA1, LOW);
+  digitalWrite(mA2, LOW);
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, LOW);
+}
+void left(int pwma, int pwmb){
+  analogWrite(mAEn, pwma);
+  analogWrite(mBEn, pwmb);
+  
+  digitalWrite(mA1, LOW);
+  digitalWrite(mA2, LOW);
+ 
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, HIGH);
+  delay(730);
+
+  digitalWrite(mA1, LOW);
+  digitalWrite(mA2, LOW);
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, LOW);
+}
+void right(int pwma, int pwmb){
+  analogWrite(mAEn, pwma);
+  analogWrite(mBEn, pwmb);
+  
+  digitalWrite(mA1, HIGH);
+  digitalWrite(mA2, LOW);
+
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, LOW);
+  delay(730);
+
   digitalWrite(mA1,LOW);
   digitalWrite(mA2,LOW);
   digitalWrite(mB1,LOW);
   digitalWrite(mB2,LOW);
-  // delay(1000);
 }
 
 void setup() {
@@ -72,27 +108,21 @@ void loop() {
     int pwmA = 100;
     int pwmB = 100;
     if(x == 1){
-        forward(pwmA, pwmB);
-        // delay(1000);
-        Serial.print("Forward");
+      forward(pwmA, pwmB);
+      Serial.print("Forward");
     }
     else if(x == 2){
-        reverse(pwmA, pwmB);
-        // delay(1000);
-        Serial.print("Reverse");
+      reverse(pwmA, pwmB);
+      Serial.print("Reverse");
     }
-    // else if(x == 3){
-    //     left(pwmB, pwmA);
-    //     // delay(1000);
-    //     Serial.print("Left");
-    // }
-    // else if(x == 4){
-    //     right(pwmB, pwmA);
-    //     // delay(1000);
-    //     Serial.print("Right");
-    // }
-    // forward(pwm, pwm);
-    // reverse();
+    else if(x == 3){
+      left(pwmA, pwmB);
+      Serial.print("Left");
+    }
+    else if(x == 4){
+      right(pwmA, pwmB);
+      Serial.print("Right");
+    }
 
     nRotations = Encodervalue/rps;
 

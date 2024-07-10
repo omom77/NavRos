@@ -1,10 +1,13 @@
 <launch>
+    <!-- path to the urdf file needed to launch the rviz simulation -->
     <let name="urdf_path" 
          value="$(find-pkg-share navros_description)/urdf/navros_main.urdf.xacro" />
+
+    <!-- Path to the rviz file that loads the default configuration of the robot -->
     <let name="rviz_config_path"
          value="$(find-pkg-share navros_description)/rviz/navros.rviz" />
 
-         
+         <!-- URDF file of the robot to laucnh in gazebo or rviz -->
         <node pkg="robot_state_publisher" exec="robot_state_publisher">
             <param name="robot_description"
             value="$(command 'xacro $(var urdf_path)')" />

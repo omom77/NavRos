@@ -14,13 +14,20 @@
         <!-- <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" >
             <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/test_world.world" />
         </include> -->
+
+        <!-- Run Gazebo -->
         <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" />
             
         <node pkg="gazebo_ros" exec="spawn_entity.py"
         args="-topic robot_description -entity navros" />
             
+    <!-- run rviz2 -->
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
+    
+    <!-- run the nodes required for rviz2 -->
     <node pkg="controller_manager" exec="spawner" args="diff_cont"/>
     <node pkg="controller_manager" exec="spawner" args="joint_broad"/>
+    
+    <!-- Run the node - navros remote controller -->
     <node pkg="navros_remote" exec="navros_robot_controller_server.py" />
 </launch>

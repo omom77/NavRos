@@ -1,42 +1,47 @@
-# Use the official ROS 2 Humble base image
-FROM ros:humble
+ARG FROM_IMAGE=ros:humble
+ARG OVERLAY_WS=/opt/ros/overlay_ws
 
-# Set environment variables
-ENV ROS_DOMAIN_ID=0
-ENV ROS_NAMESPACE=pi5_drive
+# multi-stage for caching
+FROM $FROM_IMAGE AS cacher
 
-# Create a workspace directory
-RUN mkdir -p /opt/navros_ws/src
-
-# Set the working directory
-WORKDIR /opt/navros_ws/src
-
-# Copy your package files into the container (assumes local package is in the context)
+# clone overlay source
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS/src
 COPY . .
 
-# Update apt repositories and install necessary dependencies
-RUN apt-get update && apt-get install -y \
-    python3-rosdep \
+# copy manifests for caching
+WORKDIR /opt
+RUN mkdir -p /tmp/opt && \
+    find ./ -name "package.xml" | \
+      xargs cp --parents -t /tmp/opt && \
+    find ./ -name "COLCON_IGNORE" | \
+      xargs cp --parents -t /tmp/opt || true
+
+# multi-stage for building
+FROM $FROM_IMAGE AS builder
+
+# install overlay dependencies
+ARG OVERLAY_WS
+WORKDIR $OVERLAY_WS
+COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    apt-get update && rosdep install -y \
+      --from-paths src \
+      --ignore-src \
     && rm -rf /var/lib/apt/lists/*
 
-# Initialize rosdep, removing the default sources list file if it exists
-RUN rm -f /etc/ros/rosdep/sources.list.d/20-default.list && \
-    rosdep init && \
-    rosdep update
+# build overlay source
+COPY --from=cacher $OVERLAY_WS/src ./src
+ARG OVERLAY_MIXINS="release"
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+    colcon build \
+      --mixin $OVERLAY_MIXINS
 
-# Install the package dependencies, skipping gazebo-related packages
-RUN rosdep install -y --from-paths . --ignore-src --skip-keys="gazebo_ros"
+# source entrypoint setup
+ENV OVERLAY_WS $OVERLAY_WS
+RUN sed --in-place --expression \
+      '$isource "$OVERLAY_WS/install/setup.bash"' \
+      /ros_entrypoint.sh
 
-# Build the ROS 2 workspace
-WORKDIR /opt/navros_ws
-RUN . /opt/ros/humble/setup.sh && colcon build --symlink-install
-
-# Source the setup script
-RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-RUN echo "source /opt/navros_ws/install/setup.bash" >> ~/.bashrc
-
-# Set the entrypoint to the ros2 command
-ENTRYPOINT ["/ros_entrypoint.sh"]
-
-# Run the command to launch the desired ROS 2 launch file
-CMD ["ros2", "launch", "navros_bringup", "pi5_drive.launch.xml"]
+# run launch file
+CMD ["ros2", "launch", "navros_bringup", "navros_drive.launch.xml"]

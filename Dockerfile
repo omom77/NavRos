@@ -19,8 +19,10 @@ RUN apt-get update && apt-get install -y \
     python3-rosdep \
     && rm -rf /var/lib/apt/lists/*
 
-# Initialize rosdep
-RUN rosdep init && rosdep update
+# Initialize rosdep, removing the default sources list file if it exists
+RUN rm -f /etc/ros/rosdep/sources.list.d/20-default.list && \
+    rosdep init && \
+    rosdep update
 
 # Install the package dependencies
 RUN rosdep install -y --from-paths . --ignore-src

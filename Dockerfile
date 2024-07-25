@@ -24,8 +24,8 @@ RUN rm -f /etc/ros/rosdep/sources.list.d/20-default.list && \
     rosdep init && \
     rosdep update
 
-# Install the package dependencies
-RUN rosdep install -y --from-paths . --ignore-src
+# Install the package dependencies, skipping gazebo-related packages
+RUN rosdep install -y --from-paths . --ignore-src --skip-keys="gazebo_ros"
 
 # Build the ROS 2 workspace
 WORKDIR /opt/navros_ws

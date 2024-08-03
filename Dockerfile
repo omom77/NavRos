@@ -43,5 +43,8 @@ RUN sed --in-place --expression \
       '$isource "$OVERLAY_WS/install/setup.bash"' \
       /ros_entrypoint.sh
 
+RUN sudo apt update
+RUN sudo apt install python3-serial -y
+
 # run launch file
-CMD ["ros2", "launch", "navros_bringup", "navros_drive.launch.xml"]
+CMD ["ros2", "launch", "navros_bringup", "pi5_drive.launch.py"]

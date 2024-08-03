@@ -1,4 +1,0 @@
-source;share/navros_bringup/local_setup.bash
-source;share/navros_bringup/local_setup.dsv
-source;share/navros_bringup/local_setup.sh
-source;share/navros_bringup/local_setup.zsh

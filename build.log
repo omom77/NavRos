@@ -1,0 +1,100 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load .dockerignore
+#1 transferring context: 2B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.35kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/ros:humble
+#3 DONE 0.0s
+
+#4 [cacher 1/5] FROM docker.io/library/ros:humble
+#4 DONE 0.0s
+
+#5 [cacher 2/5] WORKDIR /opt/ros/overlay_ws/src
+#5 CACHED
+
+#6 [builder  2/10] WORKDIR /opt/ros/overlay_ws
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 10.79kB 0.0s done
+#7 DONE 0.0s
+
+#8 [cacher 3/5] COPY . .
+#8 DONE 0.1s
+
+#9 [cacher 4/5] WORKDIR /opt
+#9 DONE 0.0s
+
+#10 [cacher 5/5] RUN mkdir -p /tmp/opt &&     find ./ -name "package.xml" |       xargs cp --parents -t /tmp/opt &&     find ./ -name "COLCON_IGNORE" |       xargs cp --parents -t /tmp/opt || true
+#10 0.634 cp: missing file operand
+#10 0.634 Try 'cp --help' for more information.
+#10 DONE 0.7s
+
+#11 [builder  3/10] COPY --from=cacher /tmp//opt/ros/overlay_ws/src ./src
+#11 DONE 0.0s
+
+#12 [builder  4/10] RUN ls -la ./src
+#12 0.280 total 32
+#12 0.280 drwxr-xr-x 8 root root 4096 Aug  4 11:22 .
+#12 0.280 drwxr-xr-x 1 root root 4096 Aug  4 11:22 ..
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 navros_bringup
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 navros_description
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 navros_firmware
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 navros_remote
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 serial_motor_demo
+#12 0.280 drwxr-xr-x 2 root root 4096 Aug  4 11:22 serial_motor_demo_msgs
+#12 DONE 0.3s
+
+#13 [builder  5/10] RUN . /opt/ros/humble/setup.sh &&     apt-get update && rosdep install -y       --from-paths /opt/ros/overlay_ws/src/NavRos/navros_remote     && rm -rf /var/lib/apt/lists/*
+#13 0.966 Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+#13 1.215 Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+#13 1.217 Get:3 http://packages.ros.org/ros2/ubuntu jammy InRelease [4682 B]
+#13 1.641 Get:4 http://packages.ros.org/ros2/ubuntu jammy/main amd64 Packages [1568 kB]
+#13 1.763 Get:5 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+#13 1.958 Get:6 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+#13 2.156 Get:7 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+#13 2.238 Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+#13 2.871 Get:9 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [44.7 kB]
+#13 3.253 Get:10 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [2787 kB]
+#13 5.309 Get:11 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1131 kB]
+#13 5.633 Get:12 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [2118 kB]
+#13 8.588 Get:13 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+#13 8.642 Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+#13 9.468 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2884 kB]
+#13 11.48 Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1421 kB]
+#13 12.40 Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [51.8 kB]
+#13 12.65 Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2396 kB]
+#13 13.68 Get:19 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [33.7 kB]
+#13 13.86 Get:20 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [81.0 kB]
+#13 13.91 Fetched 34.9 MB in 13s (2630 kB/s)
+#13 13.91 Reading package lists...
+#13 16.39 given path '/opt/ros/overlay_ws/src/NavRos/navros_remote' does not exist
+#13 ERROR: process "/bin/sh -c . /opt/ros/$ROS_DISTRO/setup.sh &&     apt-get update && rosdep install -y       --from-paths $OVERLAY_WS/src/NavRos/navros_remote     && rm -rf /var/lib/apt/lists/*" did not complete successfully: exit code: 1
+------
+ > [builder  5/10] RUN . /opt/ros/humble/setup.sh &&     apt-get update && rosdep install -y       --from-paths /opt/ros/overlay_ws/src/NavRos/navros_remote     && rm -rf /var/lib/apt/lists/*:
+8.588 Get:13 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+8.642 Get:14 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+9.468 Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [2884 kB]
+11.48 Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1421 kB]
+12.40 Get:17 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [51.8 kB]
+12.65 Get:18 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [2396 kB]
+13.68 Get:19 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [33.7 kB]
+13.86 Get:20 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [81.0 kB]
+
+16.39 given path '/opt/ros/overlay_ws/src/NavRos/navros_remote' does not exist
+------
+Dockerfile:28
+--------------------
+  27 |     RUN ls -la ./src
+  28 | >>> RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
+  29 | >>>     apt-get update && rosdep install -y \
+  30 | >>>       --from-paths $OVERLAY_WS/src/NavRos/navros_remote \
+  31 | >>>     && rm -rf /var/lib/apt/lists/*
+  32 |     
+--------------------
+ERROR: failed to solve: process "/bin/sh -c . /opt/ros/$ROS_DISTRO/setup.sh &&     apt-get update && rosdep install -y       --from-paths $OVERLAY_WS/src/NavRos/navros_remote     && rm -rf /var/lib/apt/lists/*" did not complete successfully: exit code: 1

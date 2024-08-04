@@ -24,6 +24,8 @@ FROM $FROM_IMAGE AS builder
 ARG OVERLAY_WS
 WORKDIR $OVERLAY_WS
 COPY --from=cacher /tmp/$OVERLAY_WS/src ./src
+RUN ls -la ./src
+
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
     apt-get update && rosdep install -y \
       --from-paths src \
@@ -47,4 +49,4 @@ RUN sudo apt update
 RUN sudo apt install python3-serial -y
 
 # run launch file
-CMD ["ros2", "launch", "navros_bringup", "pi5_drive.launch.py"]
+CMD ["ros2", "launch", "navros_remote", "pi5_drive.launch.py"]

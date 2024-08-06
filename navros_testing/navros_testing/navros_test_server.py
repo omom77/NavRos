@@ -15,6 +15,8 @@ class NavrosArdService(Node):
                                             self.serviceCallback)
         self.get_logger().info("Navros Hardware Ready To Publish")
 
+        self.publish_ = self.create_publisher(RunMotor, "test_navros_motor_feedback", )
+
 
     def serviceCallback(self, req, res):
         self.get_logger().info(req.motor_state)

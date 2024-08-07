@@ -1,0 +1,1 @@
+rclcpp;rclpy;libserial-dev;geometry_msgs;serial_motor_demo_msgs;std_msgs;python3-serial;ament_lint_auto;ament_lint_common

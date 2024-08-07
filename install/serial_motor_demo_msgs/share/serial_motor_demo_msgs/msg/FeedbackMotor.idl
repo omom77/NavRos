@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from serial_motor_demo_msgs/msg/FeedbackMotor.msg
+// generated code does not contain a copyright notice
+
+
+module serial_motor_demo_msgs {
+  module msg {
+    struct FeedbackMotor {
+      int32 m_feedback;
+    };
+  };
+};

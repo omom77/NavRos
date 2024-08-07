@@ -1,0 +1,10 @@
+{
+  "package_name": "serial_motor_demo_msgs",
+  "non_idl_tuples": [
+    "/home/om/navros_ws/src/serial_motor_demo_msgs:msg/MotorCommand.msg",
+    "/home/om/navros_ws/src/serial_motor_demo_msgs:msg/MotorVels.msg",
+    "/home/om/navros_ws/src/serial_motor_demo_msgs:msg/EncoderVals.msg",
+    "/home/om/navros_ws/src/serial_motor_demo_msgs:msg/FeedbackMotor.msg",
+    "/home/om/navros_ws/src/serial_motor_demo_msgs:srv/RunMotor.srv"
+  ]
+}

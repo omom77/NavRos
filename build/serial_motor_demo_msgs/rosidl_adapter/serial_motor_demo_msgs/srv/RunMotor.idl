@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from serial_motor_demo_msgs/srv/RunMotor.srv
+// generated code does not contain a copyright notice
+
+
+module serial_motor_demo_msgs {
+  module srv {
+    struct RunMotor_Request {
+      string motor_state;
+    };
+    struct RunMotor_Response {
+      boolean success;
+    };
+  };
+};

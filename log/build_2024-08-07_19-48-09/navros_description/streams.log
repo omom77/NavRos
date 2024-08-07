@@ -1,0 +1,33 @@
+[0.020s] Invoking command in '/home/om/navros_ws/src/build/navros_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_description -- -j16 -l16
+[0.059s] Invoked command in '/home/om/navros_ws/src/build/navros_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_description -- -j16 -l16
+[0.095s] Invoking command in '/home/om/navros_ws/src/build/navros_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_description
+[0.105s] -- Install configuration: ""
+[0.105s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf
+[0.105s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf/navros_main.urdf.xacro
+[0.105s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf/ros2_control.xacro
+[0.105s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf/navros_base.xacro
+[0.105s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf/navros_gazebo.xacro
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//urdf/common_properties.xacro
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//launch
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//launch/navros.launch.xml
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//rviz
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//rviz/navros.rviz
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//config
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//config/gazebo_params.yaml
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description//config/my_controllers.yaml
+[0.106s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/ament_index/resource_index/package_run_dependencies/navros_description
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/ament_index/resource_index/parent_prefix_path/navros_description
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/environment/ament_prefix_path.sh
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/environment/ament_prefix_path.dsv
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/environment/path.sh
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/environment/path.dsv
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/local_setup.bash
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/local_setup.sh
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/local_setup.zsh
+[0.107s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/local_setup.dsv
+[0.107s] -- Installing: /home/om/navros_ws/src/install/navros_description/share/navros_description/package.dsv
+[0.108s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/ament_index/resource_index/packages/navros_description
+[0.108s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/cmake/navros_descriptionConfig.cmake
+[0.108s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/cmake/navros_descriptionConfig-version.cmake
+[0.108s] -- Up-to-date: /home/om/navros_ws/src/install/navros_description/share/navros_description/package.xml
+[0.110s] Invoked command in '/home/om/navros_ws/src/build/navros_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_description

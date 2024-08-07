@@ -1,0 +1,36 @@
+<launch>
+    <!-- path to the urdf file needed to launch the rviz simulation -->
+    <let name="urdf_path" 
+         value="$(find-pkg-share navros_description)/urdf/navros_main.urdf.xacro" />
+
+    <!-- Path to the rviz file that loads the default configuration of the robot -->
+    <let name="rviz_config_path"
+         value="$(find-pkg-share navros_description)/rviz/navros.rviz" />
+
+         <!-- URDF file of the robot to laucnh in gazebo or rviz -->
+        <node pkg="robot_state_publisher" exec="robot_state_publisher">
+            <param name="robot_description"
+            value="$(command 'xacro $(var urdf_path)')" />
+        </node>
+            
+        <!-- Launch the world inside gazebo when launching gazebo -->
+        <!-- <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" >
+            <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/test_world.world" />
+        </include> -->
+
+        <!-- Run Gazebo -->
+        <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" />
+            
+        <node pkg="gazebo_ros" exec="spawn_entity.py"
+        args="-topic robot_description -entity navros" />
+            
+    <!-- run rviz2 -->
+    <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)"/>
+    
+    <!-- run the nodes required for rviz2 -->
+    <node pkg="controller_manager" exec="spawner" args="diff_cont"/>
+    <node pkg="controller_manager" exec="spawner" args="joint_broad"/>
+    
+    <!-- Run the node - navros remote controller -->
+    <node pkg="navros_remote" exec="navros_robot_controller_server.py" />
+</launch>

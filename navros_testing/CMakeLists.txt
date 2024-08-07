@@ -41,6 +41,7 @@ find_package(PkgConfig)
 install(PROGRAMS
   ${PROJECT_NAME}/navros_test_server.py
   ${PROJECT_NAME}/navros_test_client.py
+  ${PROJECT_NAME}/navros_test_feedback_motor.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

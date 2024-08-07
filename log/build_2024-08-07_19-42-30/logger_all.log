@@ -1,0 +1,320 @@
+[0.102s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.102s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7ac9f6730ee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ac9f67304c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ac9f67304c0>>, mixin_verb=('build',))
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.133s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/om/navros_ws/src'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(navros_bringup) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'navros_bringup' with type 'ros.ament_cmake' and name 'navros_bringup'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(navros_description) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'navros_description' with type 'ros.ament_cmake' and name 'navros_description'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_firmware) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'navros_firmware' with type 'ros.ament_cmake' and name 'navros_firmware'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_remote) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'navros_remote' with type 'ros.ament_cmake' and name 'navros_remote'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(navros_testing) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Package 'navros_testing' with type 'ros.ament_cmake' and name 'navros_testing'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo) by extension 'ros'
+[0.151s] DEBUG:colcon.colcon_core.package_identification:Package 'serial_motor_demo' with type 'ros.ament_python' and name 'serial_motor_demo'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extension 'ignore'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extension 'ignore_ament_install'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extensions ['colcon_pkg']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extension 'colcon_pkg'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extensions ['colcon_meta']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extension 'colcon_meta'
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extensions ['ros']
+[0.151s] Level 1:colcon.colcon_core.package_identification:_identify(serial_motor_demo_msgs) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'serial_motor_demo_msgs' with type 'ros.ament_cmake' and name 'serial_motor_demo_msgs'
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.152s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.173s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/om/navros_ws/install
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/om/parrot_ws/install
+[0.174s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/om/ros2_udemy_manipulator_ws/install
+[0.175s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/om/parrot_ws/src/install
+[0.176s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/om/ros2_ws/install
+[0.176s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/om/ros2_robot/install
+[0.177s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 376 installed packages in /opt/ros/humble
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_target' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.245s] Level 5:colcon.colcon_core.verb:set package 'navros_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'navros_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/navros_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/navros_description', 'merge_install': False, 'path': '/home/om/navros_ws/src/navros_description', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'navros_firmware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'navros_firmware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/navros_firmware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/navros_firmware', 'merge_install': False, 'path': '/home/om/navros_ws/src/navros_firmware', 'symlink_install': False, 'test_result_base': None}
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.246s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.246s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/serial_motor_demo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/serial_motor_demo_msgs', 'merge_install': False, 'path': '/home/om/navros_ws/src/serial_motor_demo_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'navros_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/navros_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/navros_bringup', 'merge_install': False, 'path': '/home/om/navros_ws/src/navros_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_clean_first' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'cmake_force_configure' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'ament_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'catkin_cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_remote' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.247s] DEBUG:colcon.colcon_core.verb:Building package 'navros_remote' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/navros_remote', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/navros_remote', 'merge_install': False, 'path': '/home/om/navros_ws/src/navros_remote', 'symlink_install': False, 'test_result_base': None}
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_args' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_target' from command line to 'None'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.247s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'navros_testing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'navros_testing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/navros_testing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/navros_testing', 'merge_install': False, 'path': '/home/om/navros_ws/src/navros_testing', 'symlink_install': False, 'test_result_base': None}
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_clean_first' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'cmake_force_configure' from command line to 'False'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'ament_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.248s] Level 5:colcon.colcon_core.verb:set package 'serial_motor_demo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.248s] DEBUG:colcon.colcon_core.verb:Building package 'serial_motor_demo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/om/navros_ws/src/build/serial_motor_demo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/om/navros_ws/src/install/serial_motor_demo', 'merge_install': False, 'path': '/home/om/navros_ws/src/serial_motor_demo', 'symlink_install': False, 'test_result_base': None}
+[0.248s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.249s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.249s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/om/navros_ws/src/serial_motor_demo_msgs' with build type 'ament_cmake'
+[0.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/om/navros_ws/src/serial_motor_demo_msgs'
+[0.252s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.252s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.252s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/om/navros_ws/src/navros_description' with build type 'ament_cmake'
+[0.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/om/navros_ws/src/navros_description'
+[0.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.266s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/om/navros_ws/src/navros_firmware' with build type 'ament_cmake'
+[0.266s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/om/navros_ws/src/navros_firmware'
+[0.266s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.266s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/serial_motor_demo_msgs
+[0.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/navros_description -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/navros_description
+[0.281s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/navros_firmware -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/navros_firmware
+[1.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/navros_description -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/navros_description
+[1.247s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_description -- -j16 -l16
+[1.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_description -- -j16 -l16
+[1.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/navros_firmware -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/navros_firmware
+[1.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_firmware -- -j16 -l16
+[1.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_description
+[1.350s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navros_description)
+[1.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_description
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description' for CMake module files
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description' for CMake config files
+[1.356s] Level 1:colcon.colcon_core.shell:create_environment_hook('navros_description', 'cmake_prefix_path')
+[1.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.ps1'
+[1.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.dsv'
+[1.358s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.sh'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/bin'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/lib/pkgconfig/navros_description.pc'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/lib/python3.10/site-packages'
+[1.359s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/bin'
+[1.360s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.ps1'
+[1.360s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.dsv'
+[1.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.sh'
+[1.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.bash'
+[1.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.zsh'
+[1.363s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/om/navros_ws/src/install/navros_description/share/colcon-core/packages/navros_description)
+[1.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_firmware -- -j16 -l16
+[1.390s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navros_description)
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description' for CMake module files
+[1.391s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description' for CMake config files
+[1.391s] Level 1:colcon.colcon_core.shell:create_environment_hook('navros_description', 'cmake_prefix_path')
+[1.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.ps1'
+[1.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.dsv'
+[1.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_description/share/navros_description/hook/cmake_prefix_path.sh'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/bin'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/lib/pkgconfig/navros_description.pc'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/lib/python3.10/site-packages'
+[1.393s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_description/bin'
+[1.393s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.ps1'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.dsv'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.sh'
+[1.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.bash'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_description/share/navros_description/package.zsh'
+[1.405s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/om/navros_ws/src/install/navros_description/share/colcon-core/packages/navros_description)
+[1.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/om/navros_ws/src/navros_bringup' with build type 'ament_cmake'
+[1.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/om/navros_ws/src/navros_bringup'
+[1.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_firmware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_firmware
+[1.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/om/navros_ws/src/build/navros_bringup': AMENT_PREFIX_PATH=/home/om/navros_ws/src/install/navros_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/om/navros_ws/src/install/navros_description:/home/om/navros_ws/install/navros_testing:/home/om/navros_ws/install/navros_remote:/home/om/navros_ws/install/serial_motor_demo_msgs:/home/om/navros_ws/install/navros_firmware:/home/om/navros_ws/install/navros_bringup:/home/om/navros_ws/install/navros_description:/home/om/parrot_ws/install/parrot_v1_utils:/home/om/parrot_ws/install/parrot_v1_tutorials:/home/om/parrot_ws/install/parrot_v1_msgs:/home/om/parrot_ws/install/parrot_v1_moveit:/home/om/parrot_ws/install/parrot_v1_firmware:/home/om/parrot_ws/install/parrot_v1_description:/home/om/parrot_ws/install/parrot_v1_controller:/home/om/parrot_ws/install/parrot_v1_bringup:/home/om/parrot_ws/install/lifecycle_nodes_example:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_utils:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_remote:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_cpp_examples:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_msgs:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_moveit:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_firmware:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_description:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_controller:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_bringup:/home/om/parrot_ws/src/install/parrot_v1_utils:/home/om/parrot_ws/src/install/parrot_v1_msgs:/home/om/parrot_ws/src/install/parrot_v1_moveit:/home/om/parrot_ws/src/install/parrot_v1_firmware:/home/om/parrot_ws/src/install/parrot_v1_description:/home/om/parrot_ws/src/install/parrot_v1_controller:/home/om/parrot_ws/src/install/parrot_v1_bringup:/home/om/parrot_ws/src/install/lifecycle_nodes_example:/home/om/ros2_ws/install/my_robot_bringup:/home/om/ros2_ws/install/my_cpp_pkg:/home/om/ros2_ws/install/my_robot_interfaces:/home/om/ros2_robot/install/my_robot_bringup:/home/om/ros2_robot/install/my_robot_description:/home/om/ros2_robot/install/my_robot_arm_bringup:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/navros_bringup -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/navros_bringup
+[1.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navros_firmware)
+[1.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/navros_firmware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_firmware
+[1.428s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware' for CMake module files
+[1.428s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware' for CMake config files
+[1.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('navros_firmware', 'cmake_prefix_path')
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.ps1'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.dsv'
+[1.429s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.sh'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/bin'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/lib/pkgconfig/navros_firmware.pc'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/lib/python3.10/site-packages'
+[1.430s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/bin'
+[1.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.ps1'
+[1.430s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.dsv'
+[1.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.sh'
+[1.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.bash'
+[1.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.zsh'
+[1.431s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/om/navros_ws/src/install/navros_firmware/share/colcon-core/packages/navros_firmware)
+[1.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(navros_firmware)
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware' for CMake module files
+[1.460s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware' for CMake config files
+[1.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('navros_firmware', 'cmake_prefix_path')
+[1.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.ps1'
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.dsv'
+[1.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/hook/cmake_prefix_path.sh'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/bin'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/lib/pkgconfig/navros_firmware.pc'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/lib/python3.10/site-packages'
+[1.462s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/navros_firmware/bin'
+[1.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.ps1'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.dsv'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.sh'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.bash'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/navros_firmware/share/navros_firmware/package.zsh'
+[1.464s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/om/navros_ws/src/install/navros_firmware/share/colcon-core/packages/navros_firmware)
+[1.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/om/navros_ws/src/build/serial_motor_demo_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/om/navros_ws/src/serial_motor_demo_msgs -DCMAKE_INSTALL_PREFIX=/home/om/navros_ws/src/install/serial_motor_demo_msgs
+[1.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial_motor_demo_msgs)
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs' for CMake module files
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs' for CMake config files
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs/bin'
+[1.741s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/pkgconfig/serial_motor_demo_msgs.pc'
+[1.742s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs/lib/python3.10/site-packages'
+[1.742s] Level 1:colcon.colcon_core.environment:checking '/home/om/navros_ws/src/install/serial_motor_demo_msgs/bin'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.ps1'
+[1.742s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv'
+[1.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.sh'
+[1.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.bash'
+[1.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.zsh'
+[1.743s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/om/navros_ws/src/install/serial_motor_demo_msgs/share/colcon-core/packages/serial_motor_demo_msgs)
+[2.293s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.294s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.294s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.294s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.301s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.314s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.314s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/om/navros_ws/src/install/local_setup.ps1'
+[2.315s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/om/navros_ws/src/install/_local_setup_util_ps1.py'
+[2.317s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/om/navros_ws/src/install/setup.ps1'
+[2.320s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/om/navros_ws/src/install/local_setup.sh'
+[2.321s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/om/navros_ws/src/install/_local_setup_util_sh.py'
+[2.322s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/om/navros_ws/src/install/setup.sh'
+[2.326s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/om/navros_ws/src/install/local_setup.bash'
+[2.326s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/om/navros_ws/src/install/setup.bash'
+[2.329s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/om/navros_ws/src/install/local_setup.zsh'
+[2.330s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/om/navros_ws/src/install/setup.zsh'

@@ -105,8 +105,8 @@ void loop() {
     // digitalWrite(mA2,LOW);
     // analogWrite(mAEn,255);
     int x = Serial.readString().toInt();
-    int pwmA = 100;
-    int pwmB = 100;
+    int pwmA = 200;
+    int pwmB = 200;
     if(x == 1){
       forward(pwmA, pwmB);
       Serial.print("Forward");

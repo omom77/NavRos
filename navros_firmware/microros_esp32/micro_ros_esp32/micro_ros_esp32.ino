@@ -130,15 +130,9 @@ void subscription_callback(const void * msgin)
   }
 }
 
-void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
-{
-  RCSOFTCHECK(rcl_publish(&motor_feedback_publisher, &left_motor_msg, NULL));
-  left_motor_msg.data++;
-}
-
 void setup() {
-  set_microros_transports();
-  // set_microros_wifi_transports("Airtel network", "greenfield", "192.168.1.24", 8888);
+  // set_microros_transports();
+  set_microros_wifi_transports("Airtel network", "greenfield", "192.168.1.24", 8888);
   
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  
@@ -167,32 +161,11 @@ void setup() {
     &node,
     ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int8),
     "navros_motor_control"));
-  
-  // Create motor_feedback_publisher topic
-  RCCHECK(rclc_publisher_init_default(
-    &motor_feedback_publisher,
-    &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int8),
-    "navros_motor_feedback"));
-
-  // Create timer
-  const unsigned int timer_timeout = 1000;
-  RCCHECK(rclc_timer_init_default(
-    &timer,
-    &support,
-    RCL_MS_TO_NS(timer_timeout),
-    timer_callback));
-
-  // Add Timer
 
   // create executor
   // Dont need executor for publisher
   RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
   RCCHECK(rclc_executor_add_subscription(&executor, &motor_control_subscriber, &msg, &subscription_callback, ON_NEW_DATA));
-  RCCHECK(rclc_executor_add_timer(&executor, &timer));
-
-  // Initialize feedback message
-  left_motor_msg.data = 1;
 }
 
 void loop() {

@@ -23,9 +23,10 @@ pkg_check_modules(SERIAL libserial)
 
 install(PROGRAMS
   ${PROJECT_NAME}/navros_vel_pub.py
-  ${PROJECT_NAME}/navros_robot_controller_pub.py
+  ${PROJECT_NAME}/navros_robot_controller_sub.py
   ${PROJECT_NAME}/navros_robot_controller_server.py
   ${PROJECT_NAME}/navros_vel_sub_client.py
+  ${PROJECT_NAME}/navros_robot_controller_comms.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

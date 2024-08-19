@@ -8,7 +8,7 @@ from functools import partial
 class NavrosVelSubClient(Node):
 
     def __init__(self):
-        super().__init__("navros_vel_sub_client")
+        super().__init__("navros_test_client")
 
         self.get_logger().info("Initializing Communications....")
         self.navros_vel_pub_ = self.create_subscription(Twist, 

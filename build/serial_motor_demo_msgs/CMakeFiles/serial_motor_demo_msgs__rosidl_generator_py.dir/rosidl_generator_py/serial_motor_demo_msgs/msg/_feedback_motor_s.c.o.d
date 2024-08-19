@@ -209,4 +209,6 @@ CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/s
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
  /home/om/navros_ws/src/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/feedback_motor__struct.h \
  /home/om/navros_ws/src/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/detail/feedback_motor__functions.h \
- /home/om/navros_ws/src/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+ /home/om/navros_ws/src/build/serial_motor_demo_msgs/rosidl_generator_c/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

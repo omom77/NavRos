@@ -45,9 +45,10 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navros_remote" TYPE PROGRAM FILES
     "/home/om/navros_ws/src/navros_remote/navros_remote/navros_vel_pub.py"
-    "/home/om/navros_ws/src/navros_remote/navros_remote/navros_robot_controller_pub.py"
+    "/home/om/navros_ws/src/navros_remote/navros_remote/navros_robot_controller_sub.py"
     "/home/om/navros_ws/src/navros_remote/navros_remote/navros_robot_controller_server.py"
     "/home/om/navros_ws/src/navros_remote/navros_remote/navros_vel_sub_client.py"
+    "/home/om/navros_ws/src/navros_remote/navros_remote/navros_robot_controller_comms.py"
     )
 endif()
 

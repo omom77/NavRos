@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_FeedbackMotor_m_feedback
+class Init_FeedbackMotor_data
 {
 public:
-  Init_FeedbackMotor_m_feedback()
+  Init_FeedbackMotor_data()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::serial_motor_demo_msgs::msg::FeedbackMotor m_feedback(::serial_motor_demo_msgs::msg::FeedbackMotor::_m_feedback_type arg)
+  ::serial_motor_demo_msgs::msg::FeedbackMotor data(::serial_motor_demo_msgs::msg::FeedbackMotor::_data_type arg)
   {
-    msg_.m_feedback = std::move(arg);
+    msg_.data = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::serial_motor_demo_msgs::msg::FeedbackMotor>()
 {
-  return serial_motor_demo_msgs::msg::builder::Init_FeedbackMotor_m_feedback();
+  return serial_motor_demo_msgs::msg::builder::Init_FeedbackMotor_data();
 }
 
 }  // namespace serial_motor_demo_msgs

@@ -1,5 +1,6 @@
 /home/om/navros_ws/src/install/navros_testing/lib/navros_testing/navros_test_server.py
 /home/om/navros_ws/src/install/navros_testing/lib/navros_testing/navros_test_client.py
+/home/om/navros_ws/src/install/navros_testing/lib/navros_testing/navros_test_feedback_motor.py
 /home/om/navros_ws/src/install/navros_testing/share/ament_index/resource_index/package_run_dependencies/navros_testing
 /home/om/navros_ws/src/install/navros_testing/share/ament_index/resource_index/parent_prefix_path/navros_testing
 /home/om/navros_ws/src/install/navros_testing/share/navros_testing/environment/ament_prefix_path.sh

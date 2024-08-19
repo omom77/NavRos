@@ -5,8 +5,9 @@
 
 module serial_motor_demo_msgs {
   module msg {
+    typedef int32 int32__3[3];
     struct FeedbackMotor {
-      int32 m_feedback;
+      int32__3 data;
     };
   };
 };

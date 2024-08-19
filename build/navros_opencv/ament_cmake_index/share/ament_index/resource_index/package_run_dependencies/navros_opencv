@@ -1,0 +1,1 @@
+rclpy;sensor_msgs;cv_bridge;python3;opencv-python;ultralytics;python3-serial;ament_lint_auto;ament_lint_common

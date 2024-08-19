@@ -16,6 +16,9 @@
 #include "serial_motor_demo_msgs/msg/detail/feedback_motor__struct.h"
 #include "serial_motor_demo_msgs/msg/detail/feedback_motor__functions.h"
 
+#include "rosidl_runtime_c/primitives_sequence.h"
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
+
 
 ROSIDL_GENERATOR_C_EXPORT
 bool serial_motor_demo_msgs__msg__feedback_motor__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -50,13 +53,28 @@ bool serial_motor_demo_msgs__msg__feedback_motor__convert_from_py(PyObject * _py
     assert(strncmp("serial_motor_demo_msgs.msg._feedback_motor.FeedbackMotor", full_classname_dest, 56) == 0);
   }
   serial_motor_demo_msgs__msg__FeedbackMotor * ros_message = _ros_message;
-  {  // m_feedback
-    PyObject * field = PyObject_GetAttrString(_pymsg, "m_feedback");
+  {  // data
+    PyObject * field = PyObject_GetAttrString(_pymsg, "data");
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->m_feedback = (int32_t)PyLong_AsLong(field);
+    {
+      // TODO(dirk-thomas) use a better way to check the type before casting
+      assert(field->ob_type != NULL);
+      assert(field->ob_type->tp_name != NULL);
+      assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+      PyArrayObject * seq_field = (PyArrayObject *)field;
+      Py_INCREF(seq_field);
+      assert(PyArray_NDIM(seq_field) == 1);
+      assert(PyArray_TYPE(seq_field) == NPY_INT32);
+      Py_ssize_t size = 3;
+      int32_t * dest = ros_message->data;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        int32_t tmp = *(npy_int32 *)PyArray_GETPTR1(seq_field, i);
+        memcpy(&dest[i], &tmp, sizeof(int32_t));
+      }
+      Py_DECREF(seq_field);
+    }
     Py_DECREF(field);
   }
 
@@ -81,16 +99,23 @@ PyObject * serial_motor_demo_msgs__msg__feedback_motor__convert_to_py(void * raw
     }
   }
   serial_motor_demo_msgs__msg__FeedbackMotor * ros_message = (serial_motor_demo_msgs__msg__FeedbackMotor *)raw_ros_message;
-  {  // m_feedback
+  {  // data
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->m_feedback);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "m_feedback", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
+    field = PyObject_GetAttrString(_pymessage, "data");
+    if (!field) {
+      return NULL;
     }
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "numpy.ndarray") == 0);
+    PyArrayObject * seq_field = (PyArrayObject *)field;
+    assert(PyArray_NDIM(seq_field) == 1);
+    assert(PyArray_TYPE(seq_field) == NPY_INT32);
+    assert(sizeof(npy_int32) == sizeof(int32_t));
+    npy_int32 * dst = (npy_int32 *)PyArray_GETPTR1(seq_field, 0);
+    int32_t * src = &(ros_message->data[0]);
+    memcpy(dst, src, 3 * sizeof(int32_t));
+    Py_DECREF(field);
   }
 
   // ownership of _pymessage is transferred to the caller

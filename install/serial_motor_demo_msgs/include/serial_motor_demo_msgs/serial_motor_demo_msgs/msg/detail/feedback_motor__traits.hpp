@@ -25,10 +25,21 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: m_feedback
+  // member: data
   {
-    out << "m_feedback: ";
-    rosidl_generator_traits::value_to_yaml(msg.m_feedback, out);
+    if (msg.data.size() == 0) {
+      out << "data: []";
+    } else {
+      out << "data: [";
+      size_t pending_items = msg.data.size();
+      for (auto item : msg.data) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -37,14 +48,24 @@ inline void to_block_style_yaml(
   const FeedbackMotor & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: m_feedback
+  // member: data
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "m_feedback: ";
-    rosidl_generator_traits::value_to_yaml(msg.m_feedback, out);
-    out << "\n";
+    if (msg.data.size() == 0) {
+      out << "data: []\n";
+    } else {
+      out << "data:\n";
+      for (auto item : msg.data) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
   }
 }  // NOLINT(readability/fn_size)
 

@@ -501,7 +501,9 @@ CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/s
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/serial_motor_demo_msgs/msg/detail/feedback_motor__struct.h \
   rosidl_generator_c/serial_motor_demo_msgs/msg/detail/feedback_motor__functions.h \
-  rosidl_generator_c/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h
 
 CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c.o: rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c \
   /usr/include/stdc-predef.h \
@@ -1262,11 +1264,11 @@ CMakeFiles/serial_motor_demo_msgs__rosidl_generator_py.dir/rosidl_generator_py/s
 
 rosidl_generator_c/serial_motor_demo_msgs/srv/detail/run_motor__functions.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
 rosidl_generator_c/serial_motor_demo_msgs/srv/detail/run_motor__struct.h:
 
 rosidl_generator_c/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h:
+
+rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1366,13 +1368,15 @@ rosidl_generator_c/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_con
 
 /usr/include/python3.10/cpython/compile.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h:
 
 rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_command_s.c:
 
@@ -1596,7 +1600,7 @@ rosidl_generator_py/serial_motor_demo_msgs/srv/_run_motor_s.c:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-rosidl_generator_py/serial_motor_demo_msgs/msg/_motor_vels_s.c:
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 

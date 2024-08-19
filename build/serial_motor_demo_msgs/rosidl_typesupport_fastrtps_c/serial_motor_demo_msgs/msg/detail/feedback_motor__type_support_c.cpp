@@ -49,9 +49,11 @@ static bool _FeedbackMotor__cdr_serialize(
     return false;
   }
   const _FeedbackMotor__ros_msg_type * ros_message = static_cast<const _FeedbackMotor__ros_msg_type *>(untyped_ros_message);
-  // Field name: m_feedback
+  // Field name: data
   {
-    cdr << ros_message->m_feedback;
+    size_t size = 3;
+    auto array_ptr = ros_message->data;
+    cdr.serializeArray(array_ptr, size);
   }
 
   return true;
@@ -66,9 +68,11 @@ static bool _FeedbackMotor__cdr_deserialize(
     return false;
   }
   _FeedbackMotor__ros_msg_type * ros_message = static_cast<_FeedbackMotor__ros_msg_type *>(untyped_ros_message);
-  // Field name: m_feedback
+  // Field name: data
   {
-    cdr >> ros_message->m_feedback;
+    size_t size = 3;
+    auto array_ptr = ros_message->data;
+    cdr.deserializeArray(array_ptr, size);
   }
 
   return true;
@@ -88,10 +92,13 @@ size_t get_serialized_size_serial_motor_demo_msgs__msg__FeedbackMotor(
   (void)padding;
   (void)wchar_size;
 
-  // field.name m_feedback
+  // field.name data
   {
-    size_t item_size = sizeof(ros_message->m_feedback);
-    current_alignment += item_size +
+    size_t array_size = 3;
+    auto array_ptr = ros_message->data;
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -123,9 +130,9 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__FeedbackMotor(
   full_bounded = true;
   is_plain = true;
 
-  // member: m_feedback
+  // member: data
   {
-    size_t array_size = 1;
+    size_t array_size = 3;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
@@ -140,7 +147,7 @@ size_t max_serialized_size_serial_motor_demo_msgs__msg__FeedbackMotor(
     using DataType = serial_motor_demo_msgs__msg__FeedbackMotor;
     is_plain =
       (
-      offsetof(DataType, m_feedback) +
+      offsetof(DataType, data) +
       last_member_size
       ) == ret_val;
   }

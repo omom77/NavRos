@@ -18,6 +18,7 @@ find_package(cv_bridge REQUIRED)
 
 install(PROGRAMS
   ${PROJECT_NAME}/navros_test_opencv.py
+  ${PROJECT_NAME}/navros_test2_opencv.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -38,30 +38,30 @@ struct FeedbackMotor_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->m_feedback = 0l;
+      std::fill<typename std::array<int32_t, 3>::iterator, int32_t>(this->data.begin(), this->data.end(), 0l);
     }
   }
 
   explicit FeedbackMotor_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : data(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->m_feedback = 0l;
+      std::fill<typename std::array<int32_t, 3>::iterator, int32_t>(this->data.begin(), this->data.end(), 0l);
     }
   }
 
   // field types and members
-  using _m_feedback_type =
-    int32_t;
-  _m_feedback_type m_feedback;
+  using _data_type =
+    std::array<int32_t, 3>;
+  _data_type data;
 
   // setters for named parameter idiom
-  Type & set__m_feedback(
-    const int32_t & _arg)
+  Type & set__data(
+    const std::array<int32_t, 3> & _arg)
   {
-    this->m_feedback = _arg;
+    this->data = _arg;
     return *this;
   }
 
@@ -107,7 +107,7 @@ struct FeedbackMotor_
   // comparison operators
   bool operator==(const FeedbackMotor_ & other) const
   {
-    if (this->m_feedback != other.m_feedback) {
+    if (this->data != other.data) {
       return false;
     }
     return true;

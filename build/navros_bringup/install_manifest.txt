@@ -1,5 +1,6 @@
 /home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/navros_drive.launch.xml
 /home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/navros_rsp.launch.py
+/home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/navros_testing.launch.py
 /home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/navros_gazebo.launch.xml
 /home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/pi5_drive.launch.py
 /home/om/navros_ws/src/install/navros_bringup/share/navros_bringup//launch/navros_gazebo.launch.py

@@ -32,8 +32,10 @@ cdr_serialize(
   const serial_motor_demo_msgs::msg::FeedbackMotor & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: m_feedback
-  cdr << ros_message.m_feedback;
+  // Member: data
+  {
+    cdr << ros_message.data;
+  }
   return true;
 }
 
@@ -43,8 +45,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   serial_motor_demo_msgs::msg::FeedbackMotor & ros_message)
 {
-  // Member: m_feedback
-  cdr >> ros_message.m_feedback;
+  // Member: data
+  {
+    cdr >> ros_message.data;
+  }
 
   return true;
 }
@@ -62,10 +66,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: m_feedback
+  // Member: data
   {
-    size_t item_size = sizeof(ros_message.m_feedback);
-    current_alignment += item_size +
+    size_t array_size = 3;
+    size_t item_size = sizeof(ros_message.data[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -92,9 +97,9 @@ max_serialized_size_FeedbackMotor(
   is_plain = true;
 
 
-  // Member: m_feedback
+  // Member: data
   {
-    size_t array_size = 1;
+    size_t array_size = 3;
 
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
@@ -109,7 +114,7 @@ max_serialized_size_FeedbackMotor(
     using DataType = serial_motor_demo_msgs::msg::FeedbackMotor;
     is_plain =
       (
-      offsetof(DataType, m_feedback) +
+      offsetof(DataType, data) +
       last_member_size
       ) == ret_val;
   }

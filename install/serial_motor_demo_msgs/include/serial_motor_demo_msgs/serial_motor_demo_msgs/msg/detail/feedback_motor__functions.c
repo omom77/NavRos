@@ -17,7 +17,7 @@ serial_motor_demo_msgs__msg__FeedbackMotor__init(serial_motor_demo_msgs__msg__Fe
   if (!msg) {
     return false;
   }
-  // m_feedback
+  // data
   return true;
 }
 
@@ -27,7 +27,7 @@ serial_motor_demo_msgs__msg__FeedbackMotor__fini(serial_motor_demo_msgs__msg__Fe
   if (!msg) {
     return;
   }
-  // m_feedback
+  // data
 }
 
 bool
@@ -36,9 +36,11 @@ serial_motor_demo_msgs__msg__FeedbackMotor__are_equal(const serial_motor_demo_ms
   if (!lhs || !rhs) {
     return false;
   }
-  // m_feedback
-  if (lhs->m_feedback != rhs->m_feedback) {
-    return false;
+  // data
+  for (size_t i = 0; i < 3; ++i) {
+    if (lhs->data[i] != rhs->data[i]) {
+      return false;
+    }
   }
   return true;
 }
@@ -51,8 +53,10 @@ serial_motor_demo_msgs__msg__FeedbackMotor__copy(
   if (!input || !output) {
     return false;
   }
-  // m_feedback
-  output->m_feedback = input->m_feedback;
+  // data
+  for (size_t i = 0; i < 3; ++i) {
+    output->data[i] = input->data[i];
+  }
   return true;
 }
 

@@ -20,7 +20,7 @@ extern "C"
 /// Struct defined in msg/FeedbackMotor in the package serial_motor_demo_msgs.
 typedef struct serial_motor_demo_msgs__msg__FeedbackMotor
 {
-  int32_t m_feedback;
+  int32_t data[3];
 } serial_motor_demo_msgs__msg__FeedbackMotor;
 
 // Struct for a sequence of serial_motor_demo_msgs__msg__FeedbackMotor.

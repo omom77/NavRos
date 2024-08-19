@@ -1,0 +1,8 @@
+source;share/navros_opencv/hook/cmake_prefix_path.ps1
+source;share/navros_opencv/hook/cmake_prefix_path.dsv
+source;share/navros_opencv/hook/cmake_prefix_path.sh
+source;share/navros_opencv/local_setup.bash
+source;share/navros_opencv/local_setup.dsv
+source;share/navros_opencv/local_setup.ps1
+source;share/navros_opencv/local_setup.sh
+source;share/navros_opencv/local_setup.zsh

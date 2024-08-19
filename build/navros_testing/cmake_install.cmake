@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navros_testing" TYPE PROGRAM FILES
     "/home/om/navros_ws/src/navros_testing/navros_testing/navros_test_server.py"
     "/home/om/navros_ws/src/navros_testing/navros_testing/navros_test_client.py"
+    "/home/om/navros_ws/src/navros_testing/navros_testing/navros_test_feedback_motor.py"
     )
 endif()
 

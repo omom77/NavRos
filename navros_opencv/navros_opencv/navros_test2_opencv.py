@@ -14,10 +14,12 @@ class NavrosConeDetector(Node):
             super().__init__('cone_detector')
 
             # Publisher to send image data
-            self.image_publisher_ = self.create_publisher(Image, '/Cone_Detection/Image', 10)
+            self.image_publisher_ = self.create_publisher(Image, '/cone_detection/image', 10)
             
             # Publisher to send quadrant data
-            self.quadrant_publisher_ = self.create_publisher(Int8, 'Cone_Detection/Quadrant', 10)
+            # Use navros_motor_control topic to send data directly to the robot
+            # Use /cone_detection/quadrant for comms
+            self.quadrant_publisher_ = self.create_publisher(Int8, '/cone_detection/quadrant', 10)
             
             # Video was lagging as timer was too high
             self.timer = self.create_timer(0.01, self.timer_callback)

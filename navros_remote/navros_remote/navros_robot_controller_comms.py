@@ -22,13 +22,16 @@ class NavrosRobotControllerComms(Node):
                                                         "/diff_cont/cmd_vel_unstamped", 
                                                         self.subCallback, 
                                                         10)
+        
         self.get_logger().info("Communcations Initialized : /diff_cont/cmd_vel_unstamped")
         time.sleep(n)
 
         self.get_logger().info("Initializing /navros_motor_control")
+
         self.navros_motor_control_ = self.create_publisher(Int8, 
                                                            "/navros_motor_control", 
                                                            10)
+        
         self.get_logger().info("Communication Initialized : /navros_motor_feedback")
         time.sleep(n)
         self.get_logger().info("Node Ready : Communications Established !")

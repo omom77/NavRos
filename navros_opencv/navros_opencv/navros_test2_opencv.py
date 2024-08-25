@@ -3,6 +3,7 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
+from std_msgs.msg import Int8
 from cv_bridge import CvBridge
 from ultralytics import YOLO
 import cv2
@@ -11,8 +12,15 @@ import math
 class NavrosConeDetector(Node):
         def __init__(self):
             super().__init__('cone_detector')
-            self.publisher_ = self.create_publisher(Image, 'cone_detection', 10)
-            self.timer = self.create_timer(0.5, self.timer_callback)
+
+            # Publisher to send image data
+            self.image_publisher_ = self.create_publisher(Image, '/Cone_Detection/Image', 10)
+            
+            # Publisher to send quadrant data
+            self.quadrant_publisher_ = self.create_publisher(Int8, 'Cone_Detection/Quadrant', 10)
+            
+            # Video was lagging as timer was too high
+            self.timer = self.create_timer(0.01, self.timer_callback)
             self.bridge = CvBridge()
 
             self.model = YOLO('/home/om/navros_ws/src/navros_opencv/yolov8_weights/best.pt') 
@@ -24,6 +32,9 @@ class NavrosConeDetector(Node):
             self.cap = cv2.VideoCapture(0)
             self.cap.set(3, self.width)
             self.cap.set(4, self.height)
+
+            # Set FPS to 15
+            self.cap.set(cv2.CAP_PROP_FPS, 15)  
 
             self.fontScale = 1
             self.font = cv2.FONT_HERSHEY_SIMPLEX
@@ -101,17 +112,21 @@ class NavrosConeDetector(Node):
                         x2_y2_bottom = coords[1]
                         if (x1_y1_top[0] <= bb_center[0] < x2_y2_bottom[0]) and (
                             x1_y1_top[1] <= bb_center[1] < x2_y2_bottom[1]):
-                            print(f"Cone in Quadrant: {i + 1}")
+                            # print(f"Cone in Quadrant: {i + 1}")
+                            self.get_logger().info("Cone Detected in Quadrant: " + str(i+1))
+                            self.quadrant_callback(i+1)
 
                     # Draw bounding box and label
                     cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
 
                     confidence = math.ceil((box.conf[0] * 100)) / 100
-                    print(f"Confidence: {confidence}")
+                    # print(f"Confidence: {confidence}")
+                    self.get_logger().info(f"Confidence: {confidence}")
 
                     cls = int(box.cls[0])
                     class_name = "cone"
-                    print(f"Class name: {class_name}")
+                    # print(f"Class name: {class_name}")
+                    self.get_logger().info(f"Class name: {class_name}")
 
                     cv2.putText(
                         img, 
@@ -129,8 +144,14 @@ class NavrosConeDetector(Node):
 
             # Convert to ROS2 Image message and publish
             ros_image = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")
-            self.publisher_.publish(ros_image)
-                
+            self.image_publisher_.publish(ros_image)
+        
+        def quadrant_callback(self, msg):
+            quadrant_msg = Int8()
+            quadrant_msg.data = msg
+            self.get_logger().info(f"Publishing quadrant data {msg}")
+            self.quadrant_publisher_.publish(quadrant_msg)
+
 def main(args=None):
     rclpy.init(args=args)
     node = NavrosConeDetector() # MODIFY NAME

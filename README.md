@@ -5,7 +5,18 @@ Differential Drive Robot for Data Collection and UI Design
 - TB6612FNG Dual Motor Driver
 - ESP32
 - Rasperry Pi 5
+- 2x Wheels
 - 3D Printed Chassis
+
+## ROS2 Packages
+1. MicroRos
+   - Node running on the ESP32
+   - Control the 2 N20 DC Motors
+3. YOLOV8 OpenCV Cone Detection
+   - Cone Detection Model
+   - Obstacle Avoidance and corrective measures
+5. Keyboard Controller
+   - Control navros using keyboard
 
 ## Gazebo + Real Robot Simulation using Keyboard Control - NavRos
 ### Console 1

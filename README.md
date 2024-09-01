@@ -1,6 +1,15 @@
-# Gazebo + Real Robot Simulation using Keyboard Control - NavRos
-## Console 1
-### Run Gazebo Sim + Real Robot
+# Navros
+Differential Drive Robot for Data Collection and UI Design
+## Components
+- 2x N20 DC Motors
+- TB6612FNG Dual Motor Driver
+- ESP32
+- Rasperry Pi 5
+- 3D Printed Chassis
+
+## Gazebo + Real Robot Simulation using Keyboard Control - NavRos
+### Console 1
+- Run Gazebo Sim + Real Robot
 ```
 ros2 launch navros_bringup navros_drive.launch.xml
 ```

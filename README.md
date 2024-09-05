@@ -27,6 +27,9 @@ Read data from these nodes to be displayed on the Web UI
 - Sub to this Topic: **/diff_cont/cmd_vel_unstamped**
 - Control navros using keyboard
 
+  # Circuit Diagram
+  <img src="images/circuit_diagram.png" />
+
 # Run the newer version of Navros:
 - **Keyboard Control**
 ```

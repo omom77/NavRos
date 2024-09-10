@@ -16,6 +16,7 @@ controller_manager:
 diff_cont:
   ros__parameters:
 
+    # You can set this higher than the controller manager update rate, but it will be throttled
     publish_rate: 50.0
 
     base_frame_id: base_footprint
@@ -23,7 +24,7 @@ diff_cont:
     left_wheel_names: ['base_left_wheel_joint']
     right_wheel_names: ['base_right_wheel_joint']
     # set the below according to your robot
-    # Dist bw Left Wheel & Right Wheel
+    # Dist bw Left & Right Wheel
     wheel_separation: 2.1
     wheel_radius: 0.35
 

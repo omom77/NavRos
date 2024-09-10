@@ -52,6 +52,9 @@
     </ros2_control>
     
     <gazebo>
+        <!-- Loading up thinfs needed on the Gazebo end to talk to the hardware interface -->
+        <!-- Running a controller manager -->
+        <!-- Finding the URDF provided by robot_state_publisher -->
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
             <parameters>$(find navros_description)/config/my_controllers.yaml</parameters>
         </plugin>

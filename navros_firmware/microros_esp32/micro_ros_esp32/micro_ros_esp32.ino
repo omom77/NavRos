@@ -179,8 +179,8 @@ void subscription_callback(const void * msgin)
 }
 
 void setup() {
-  set_microros_transports();
-  // set_microros_wifi_transports("Airtel network", "greenfield", "192.168.1.24", 8888);
+  // set_microros_transports();
+  set_microros_wifi_transports("Airtel network", "greenfield", "192.168.1.13", 8888);
   
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  

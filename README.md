@@ -35,9 +35,9 @@ Read data from these nodes to be displayed on the Web UI
 ```
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
 ```
-- **Transmit keyboard values to navros_motor_control Topic**
+- **Run the complete Gazebo + MicroRos Setup**
 ```
-ros2 run navros_remote navros_robot_controller_comms.py
+ros2 launch navros_bringup navros_drive.launch.xml 
 ```
 - **Cone Detection Model**
 ```

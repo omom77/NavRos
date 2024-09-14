@@ -10,11 +10,11 @@ Differential Drive Robot for Data Collection and UI Design
 
 ## ROS2 Nodes
 Read data from these nodes to be displayed on the Web UI
-1. MicroRos
-**Sub to this Topic : navros_motor_control **
-**Sub to this Topic : navros_motor_feedback **
+1. MicroRos<br>
+   - Sub to this Topic : **navros_motor_control**
+   - Sub to this Topic : **navros_motor_feedback**
    - Node running on the ESP32
-   - Control the 2 N20 DC Motors
+   - Control and feedback from the Two N20 DC Motors
 3. YOLOV8 OpenCV Cone Detection
 - **To access quadrant data**:
    - Sub to this Topic: **'/cone_detection/quadrant'**

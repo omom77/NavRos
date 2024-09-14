@@ -1,0 +1,34 @@
+[0.022s] Invoking command in '/home/om/navros_ws/src/build/navros_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_opencv -- -j16 -l16
+[0.045s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.190s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.190s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.216s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.218s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.222s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.230s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.241s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.293s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.366s] -- Configuring done
+[0.370s] -- Generating done
+[0.371s] -- Build files have been written to: /home/om/navros_ws/src/build/navros_opencv
+[0.396s] Invoked command in '/home/om/navros_ws/src/build/navros_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/om/navros_ws/src/build/navros_opencv -- -j16 -l16
+[0.422s] Invoking command in '/home/om/navros_ws/src/build/navros_opencv': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_opencv
+[0.429s] -- Install configuration: ""
+[0.429s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/lib/navros_opencv/navros_test_opencv.py
+[0.429s] -- Installing: /home/om/navros_ws/src/install/navros_opencv/lib/navros_opencv/navros_test2_opencv.py
+[0.429s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/ament_index/resource_index/package_run_dependencies/navros_opencv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/ament_index/resource_index/parent_prefix_path/navros_opencv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/environment/ament_prefix_path.sh
+[0.430s] -- Installing: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/environment/ament_prefix_path.dsv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/environment/path.sh
+[0.430s] -- Installing: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/environment/path.dsv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/local_setup.bash
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/local_setup.sh
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/local_setup.zsh
+[0.430s] -- Installing: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/local_setup.dsv
+[0.430s] -- Installing: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/package.dsv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/ament_index/resource_index/packages/navros_opencv
+[0.430s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/cmake/navros_opencvConfig.cmake
+[0.431s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/cmake/navros_opencvConfig-version.cmake
+[0.431s] -- Up-to-date: /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/package.xml
+[0.432s] Invoked command in '/home/om/navros_ws/src/build/navros_opencv' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/om/navros_ws/install/serial_motor_demo:/home/om/parrot_ws/install/parrot_v1_examples:/home/om/parrot_ws/install/parrot_v1_comms_test:/home/om/parrot_ws/install/parrot_cv_model:/home/om/ros2_udemy_manipulator_ws/install/arduinobot_py_examples:/home/om/parrot_ws/src/install/parrot_v1_examples:/home/om/parrot_ws/src/install/parrot_v1_comms_test:/home/om/ros2_ws/install/turtlesim_catch_them_all:/home/om/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/om/navros_ws/src/build/navros_opencv

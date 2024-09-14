@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int8
+from std_msgs.msg import Int32
 from geometry_msgs.msg import Twist
 import time
 
@@ -22,13 +22,16 @@ class NavrosRobotControllerComms(Node):
                                                         "/diff_cont/cmd_vel_unstamped", 
                                                         self.subCallback, 
                                                         10)
+        
         self.get_logger().info("Communcations Initialized : /diff_cont/cmd_vel_unstamped")
         time.sleep(n)
 
         self.get_logger().info("Initializing /navros_motor_control")
-        self.navros_motor_control_ = self.create_publisher(Int8, 
+
+        self.navros_motor_control_ = self.create_publisher(Int32, 
                                                            "/navros_motor_control", 
                                                            10)
+        
         self.get_logger().info("Communication Initialized : /navros_motor_feedback")
         time.sleep(n)
         self.get_logger().info("Node Ready : Communications Established !")
@@ -50,7 +53,7 @@ class NavrosRobotControllerComms(Node):
     def pubCallback(self, motor_state):
         # Unpack Motor State Tuple
         lx, az = motor_state
-        control_command = Int8()
+        control_command = Int32()
 
         # Forward
         if lx > 0:

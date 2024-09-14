@@ -32,5 +32,7 @@
     <node pkg="controller_manager" exec="spawner" args="joint_broad"/>
     
     <!-- Run the node - navros remote controller -->
-    <node pkg="navros_remote" exec="navros_robot_controller_server.py" />
+    <!-- <node pkg="navros_remote" exec="navros_robot_controller_server.py" /> -->
+    <node pkg="navros_remote" exec="navros_robot_controller_comms.py" />
+    
 </launch>

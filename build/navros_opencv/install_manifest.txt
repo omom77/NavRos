@@ -1,4 +1,5 @@
 /home/om/navros_ws/src/install/navros_opencv/lib/navros_opencv/navros_test_opencv.py
+/home/om/navros_ws/src/install/navros_opencv/lib/navros_opencv/navros_test2_opencv.py
 /home/om/navros_ws/src/install/navros_opencv/share/ament_index/resource_index/package_run_dependencies/navros_opencv
 /home/om/navros_ws/src/install/navros_opencv/share/ament_index/resource_index/parent_prefix_path/navros_opencv
 /home/om/navros_ws/src/install/navros_opencv/share/navros_opencv/environment/ament_prefix_path.sh

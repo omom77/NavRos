@@ -43,7 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navros_opencv" TYPE PROGRAM FILES "/home/om/navros_ws/src/navros_opencv/navros_opencv/navros_test_opencv.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/navros_opencv" TYPE PROGRAM FILES
+    "/home/om/navros_ws/src/navros_opencv/navros_opencv/navros_test_opencv.py"
+    "/home/om/navros_ws/src/navros_opencv/navros_opencv/navros_test2_opencv.py"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

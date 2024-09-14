@@ -3,12 +3,13 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
-from std_msgs.msg import Int8
+from std_msgs.msg import Int32MultiArray
 from cv_bridge import CvBridge
 from ultralytics import YOLO
 import cv2
 import numpy as np
 import math
+import time
 class NavrosConeDetector(Node):
         def __init__(self):
             super().__init__('cone_detector')
@@ -19,7 +20,7 @@ class NavrosConeDetector(Node):
             # Publisher to send quadrant data
             # Use navros_motor_control topic to send data directly to the robot
             # Use /cone_detection/quadrant for comms
-            self.quadrant_publisher_ = self.create_publisher(Int8, '/cone_detection/quadrant', 10)
+            self.quadrant_publisher_ = self.create_publisher(Int32MultiArray, '/cone_detection/quadrant', 10)
             
             # Video was lagging as timer was too high
             self.timer = self.create_timer(0.01, self.timer_callback)
@@ -117,6 +118,7 @@ class NavrosConeDetector(Node):
                             # print(f"Cone in Quadrant: {i + 1}")
                             self.get_logger().info("Cone Detected in Quadrant: " + str(i+1))
                             self.quadrant_callback(i+1)
+                            time.sleep(1)
 
                     # Draw bounding box and label
                     cv2.rectangle(img, (x1, y1), (x2, y2), (255, 0, 255), 3)
@@ -148,10 +150,23 @@ class NavrosConeDetector(Node):
             ros_image = self.bridge.cv2_to_imgmsg(img, encoding="bgr8")
             self.image_publisher_.publish(ros_image)
         
-        def quadrant_callback(self, msg):
-            quadrant_msg = Int8()
-            quadrant_msg.data = msg
-            self.get_logger().info(f"Publishing quadrant data {msg}")
+        def quadrant_callback(self, quadrant):
+            quadrant_msg = Int32MultiArray()
+            
+            if quadrant == 1:       
+                quadrant_msg.data = [1]     
+            elif quadrant == 2:         
+                quadrant_msg.data = [2]     
+            elif quadrant == 3:     
+                quadrant_msg.data = [3]     
+            elif quadrant == 4:     
+                quadrant_msg.data = [4]     
+            elif quadrant == 5:     
+                quadrant_msg.data = [5]     
+            else:       
+                quadrant_msg.data = [0]  # Default if no quadrant is detected       
+            
+            self.get_logger().info(f"Publishing quadrant data {quadrant}")
             self.quadrant_publisher_.publish(quadrant_msg)
 
 def main(args=None):

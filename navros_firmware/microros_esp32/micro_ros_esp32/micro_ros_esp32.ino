@@ -61,8 +61,8 @@ void forward(int pwma, int pwmb){
   digitalWrite(mA1, HIGH);
   digitalWrite(mA2, LOW);
    
-  digitalWrite(mB1, HIGH);
-  digitalWrite(mB2, LOW);
+  digitalWrite(mB1, LOW);
+  digitalWrite(mB2, HIGH);
   delay(1000); 
    
   digitalWrite(mA1, LOW);
@@ -77,8 +77,8 @@ void reverse(int pwma, int pwmb){
   digitalWrite(mA1, LOW);
   digitalWrite(mA2, HIGH);
   
-  digitalWrite(mB1, LOW);
-  digitalWrite(mB2, HIGH);
+  digitalWrite(mB1, HIGH);
+  digitalWrite(mB2, LOW);
   delay(1000);
 
   digitalWrite(mA1, LOW);

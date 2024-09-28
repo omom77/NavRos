@@ -24,21 +24,16 @@ NavRos is a **differential drive robot** built for **real-time data collection a
 <img src="images/circuit_diagram.png" width="50%" />
 
 ## ROS2 Nodes
-Topics and Services for data monitoring
-1. navros_motor_control
-2. navros_motor_feedback
-3. /diff_cont/cmd_vel_unstamped
-4. /cone_detection/quadrant
-5. /cone_detection/image
-6. YOLOV8 OpenCV Cone Detection
+Topics for Data Collection and Monitoring
+| #  | Node                           | Data Type                | Function                                 |
+|----|--------------------------------|--------------------------|------------------------------------------|
+| 1  | ``navros_motor_control``           | std_msgs/msg/Int32             | Controls the motors based on velocity commands |
+| 2  | ``navros_motor_feedback``          | std_msgs/msg/Int32_multi_array | Provides feedback from the motors        |
+| 3  | ``/diff_cont/cmd_vel_unstamped``   | geometry_msgs/Twist            | Subscribes to velocity commands for differential drive |
+| 4  | ``/cone_detection/quadrant``       | std_msgs/Int8                  | Publishes the quadrant where a cone is detected |
+| 5  | ``/cone_detection/image``          | sensor_msgs/Image              | Publishes image data from the camera for cone detection |
 
-<img src="https://github.com/omom77/NavRos/blob/cb0c5e8dab49c8249e7086d39273cd6f7c4299f5/images/cone_detected.png" width="50%"/>
-5. Keyboard Controller
-- Sub to this Topic: **/diff_cont/cmd_vel_unstamped**
-- Control navros using keyboard
-
-  # Circuit Diagram
-  <img src="images/circuit_diagram.png" width="50%" />
+<img src="https://github.com/omom77/NavRos/blob/cb0c5e8dab49c8249e7086d39273cd6f7c4299f5/images/cone_detected.png" width="50%" />
 
 # Launch Navros
 **Step by step guide**
@@ -54,10 +49,4 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 - **Cone Detection Model**
 ```
 ros2 run navros_opencv navros_test2_opencv.py
-```
-ros2 run navros_remote navros_vel_sub_client.py 
-```
-### Subscriber to Read values from the DC Motor Encoder
-```
-ros2 run navros_remote navros_encoder_sub.py
 ```

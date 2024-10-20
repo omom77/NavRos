@@ -180,7 +180,7 @@ void subscription_callback(const void * msgin)
 
 void setup() {
   // set_microros_transports();
-  set_microros_wifi_transports("Airtel network", "greenfield", "192.168.1.13", 8888);
+  set_microros_wifi_transports("OnePlus 10R 5G", "12345678", "192.168.128.2", 8888);
   
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);  

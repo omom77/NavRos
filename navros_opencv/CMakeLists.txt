@@ -19,6 +19,8 @@ find_package(cv_bridge REQUIRED)
 install(PROGRAMS
   ${PROJECT_NAME}/navros_test_opencv.py
   ${PROJECT_NAME}/navros_test2_opencv.py
+  ${PROJECT_NAME}/navros_robot_controller_opencv_comms.py
+  ${PROJECT_NAME}/navros_robot_controller_gazebo.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

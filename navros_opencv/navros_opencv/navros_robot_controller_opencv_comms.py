@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int8, Int32
+from std_msgs.msg import Int32MultiArray, Int32
 from geometry_msgs.msg import Twist
 import time
+
+# NODE TO CONTROL THE PHYSICAL ROBOT ONLY 
+# NOT THE GAZEBO SIMULATION!
 
 class NavrosRobotControllerComms(Node):
 
@@ -12,13 +15,14 @@ class NavrosRobotControllerComms(Node):
 
         # Timer time
         n = 0.5
+        
         self.get_logger().info("Initializing Communications....")
         time.sleep(n)
         
         self.get_logger().info("Initializing : /cone_detection/quadrant")
         time.sleep(n)
         
-        self.navros_vel_pub_ = self.create_subscription(Int8, 
+        self.navros_vel_sub_ = self.create_subscription(Int32MultiArray, 
                                                         "/cone_detection/quadrant", 
                                                         self.subCallback, 
                                                         10)
@@ -40,12 +44,13 @@ class NavrosRobotControllerComms(Node):
 
     def subCallback(self, msg):
         self.get_logger().info("Recieving Values")
-        # twist_msg = Twist()
-        quadrant = msg.Int8
-        self.get_logger().info("Linear X: " + str(quadrant))
 
         # Call Publisher 
-        self.pubCallback(quadrant)
+        self.get_logger().info(f"Received quadrant values: {msg.data}")
+
+        # Iterate over the array and send each value as a control command
+        for value in msg.data:
+            self.pubCallback(value)
 
     def pubCallback(self, quadrant):
         # Unpack Motor State Tuple
@@ -73,6 +78,7 @@ class NavrosRobotControllerComms(Node):
 
         # Publish
         self.navros_motor_control_.publish(control_command)
+        self.get_logger().info(f"Sent control command: {control_command.data}")
 
 def main(args=None):
     rclpy.init(args=args)

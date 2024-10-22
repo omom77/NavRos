@@ -15,29 +15,41 @@ class NavrosConeDetector(Node):
             super().__init__('cone_detector')
 
             # Publisher to send image data
-            self.image_publisher_ = self.create_publisher(Image, '/cone_detection/image', 10)
+            self.image_publisher_ = self.create_publisher(
+                Image, 
+                '/cone_detection/image', 
+                10)
             
             # Publisher to send quadrant data
             # Use navros_motor_control topic to send data directly to the robot
             # Use /cone_detection/quadrant for comms
-            self.quadrant_publisher_ = self.create_publisher(Int32MultiArray, '/cone_detection/quadrant', 10)
+            self.quadrant_publisher_ = self.create_publisher(
+                Int32MultiArray, 
+                '/cone_detection/quadrant', 
+                10)
             
             # Video was lagging as timer was too high
-            self.timer = self.create_timer(0.01, self.timer_callback)
+            # self.timer = self.create_timer(0.01, self.image_callback)
             self.bridge = CvBridge()
 
             self.model = YOLO('/home/om/navros_ws/src/navros_opencv/yolov8_weights/best.pt') 
+            
 
             self.width = 640
             self.height = 480
+            
+            self.subscription = self.create_subscription(
+                Image, 
+                '/camera/image_raw', 
+                self.image_callback, 10)
 
             # Initialize camera stream
-            self.cap = cv2.VideoCapture(0)
-            self.cap.set(3, self.width)
-            self.cap.set(4, self.height)
+            # self.cap = cv2.VideoCapture(0)
+            # self.cap.set(3, self.width)
+            # self.cap.set(4, self.height)
 
             # Set FPS to 15
-            self.cap.set(cv2.CAP_PROP_FPS, 15)  
+            # self.cap.set(cv2.CAP_PROP_FPS, 15)  
 
             self.fontScale = 1
             self.font = cv2.FONT_HERSHEY_SIMPLEX
@@ -70,11 +82,9 @@ class NavrosConeDetector(Node):
             }
 
         # publisher callback function
-        def timer_callback(self):
-            ret, img = self.cap.read()
-            if not ret:
-                self.get_logger().error("Failed to capture image")
-                return
+        def image_callback(self, msg):
+            
+            img = self.bridge.imgmsg_to_cv2(msg, "bgr8")
             
             # Perform inference
             results = self.model(img)

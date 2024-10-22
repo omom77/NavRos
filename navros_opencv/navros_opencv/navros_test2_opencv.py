@@ -154,11 +154,11 @@ class NavrosConeDetector(Node):
             quadrant_msg = Int32MultiArray()
             
             if quadrant == 1:       
-                quadrant_msg.data = [1]     
+                quadrant_msg.data = [3, 1, 4, 1, 4, 1, 3]     
             elif quadrant == 2:         
-                quadrant_msg.data = [2]     
+                quadrant_msg.data = [4,1,3,1,3,1,4]     
             elif quadrant == 3:     
-                quadrant_msg.data = [3]     
+                quadrant_msg.data = [4,4,1,3,1,3,3,1,4]     
             elif quadrant == 4:     
                 quadrant_msg.data = [4]     
             elif quadrant == 5:     

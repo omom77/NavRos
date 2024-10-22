@@ -78,7 +78,7 @@ class NavrosRobotControllerComms(Node):
 
         # Publish
         self.navros_motor_control_.publish(control_command)
-        self.get_logger().info(f"Sent control command: {control_command.data}")
+        self.get_logger().info(f"transmitted control command: {control_command.data}")
 
 def main(args=None):
     rclpy.init(args=args)

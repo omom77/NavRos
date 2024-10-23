@@ -174,11 +174,13 @@ class NavrosConeDetector(Node):
             elif quadrant == 5:     
                 quadrant_msg.data = [5]     
             else:       
-                quadrant_msg.data = [0]  # Default if no quadrant is detected       
-            
+                quadrant_msg.data = [0]  # Default if no quadrant is detected   
+    
             self.get_logger().info(f"Publishing quadrant data {quadrant}")
             self.quadrant_publisher_.publish(quadrant_msg)
 
+            self.get_clock().sleep_for(rclpy.duration.Duration(seconds=2))
+            
 def main(args=None):
     rclpy.init(args=args)
     node = NavrosConeDetector() # MODIFY NAME

@@ -3,6 +3,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray
 from geometry_msgs.msg import Twist
+import time
 
 class NavrosRobotControllerComms(Node):
 
@@ -27,6 +28,7 @@ class NavrosRobotControllerComms(Node):
         # Iterate over the received commands and send appropriate velocities
         for value in msg.data:
             self.pubCallback(value)
+            time.sleep(1)
 
     def pubCallback(self, quadrant):
         twist = Twist()

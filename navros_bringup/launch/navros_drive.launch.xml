@@ -14,9 +14,9 @@
         </node>
             
         <!-- Launch the world inside gazebo when launching gazebo -->
-        <!-- <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" >
-            <arg name="world" value="$(find-pkg-share my_robot_bringup)/worlds/test_world.world" />
-        </include> -->
+        <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" >
+            <arg name="world" value="$(find-pkg-share navros_description)/urdf/cone_world.world" />
+        </include>
 
         <!-- Run Gazebo -->
         <include file="$(find-pkg-share gazebo_ros)/launch/gazebo.launch.py" />
